@@ -460,7 +460,7 @@ class _SwipableStackState extends State<SwipableStack>
         return _kStackMaxCount;
       }
       final remainingCount = itemCount - _currentIndex;
-      return math.min(remainingCount, _kStackMaxCount);
+      return remainingCount;
     }();
     if (stackCount <= 0) {
       return [];
